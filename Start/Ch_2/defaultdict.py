@@ -8,10 +8,14 @@ fruits = ['apple', 'pear', 'orange', 'banana',
           'apple', 'grape', 'banana', 'banana']
 
 # TODO: use a dictionary to count each element
-fruitCounter = dict()
+fruitCounter = defaultdict(int)
+
+# if you want the count to start from a desired value:
+# fruitCounter = defaultdict(lambda: 100)
 
 # TODO: Count the elements in the list
 for fruit in fruits:
     fruitCounter[fruit] += 1
 
 # TODO: print the result
+print(fruitCounter)
